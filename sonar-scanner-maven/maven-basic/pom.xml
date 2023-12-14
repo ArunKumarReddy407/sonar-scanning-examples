@@ -41,6 +41,10 @@
           <groupId>org.sonarsource.scanner.maven</groupId>
           <artifactId>sonar-maven-plugin</artifactId>
           <version>3.10.0.2594</version>
+<properties>
+    <sonar.profile>MyQualityProfile1</sonar.profile>
+    <sonar.host.url>http://13.235.244.122:9000</sonar.host.url>
+</properties>        
         </plugin>
         <plugin>
           <groupId>org.jacoco</groupId>
