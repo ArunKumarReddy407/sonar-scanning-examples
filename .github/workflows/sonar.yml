@@ -19,7 +19,6 @@ jobs:
         java-version: '17'
         distribution: 'adopt'
         cache: maven
-    - name: Build with Maven
     - run: mvn -B package --file  sonar-scanner-maven/maven-basic/pom.xml
     - run: mvn clean verify sonar:sonar --file  sonar-scanner-maven/maven-basic/pom.xml
       
