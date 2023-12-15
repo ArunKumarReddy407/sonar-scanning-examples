@@ -20,7 +20,7 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - run: mvn -B package --file  sonar-scanner-maven/maven-basic/pom.xml
-    - run: mvn clean verify sonar:sonar --file  sonar-scanner-maven/maven-basic/pom.xml -Dsonar.host.url=http://13.235.244.122:9000 -Dsonar.pdf.username=admin -Dsonar.pdf.password=${{ secrets.SONARPASSWORD}}
+    - run: mvn clean verify sonar:sonar --file  sonar-scanner-maven/maven-basic/pom.xml -Dsonar.host.url=http://13.235.244.122:9000 -Dsonar.username=admin -Dsonar.password=${{secrets.SONARPASSWORD}}
       
       
       
